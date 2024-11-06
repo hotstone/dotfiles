@@ -1,0 +1,104 @@
+{
+    "workbench.colorTheme": "Default Dark Modern",
+    "redhat.telemetry.enabled": false,
+    "aws.suppressPrompts": {
+        "yamlExtPrompt": true
+    },
+    "terminal.integrated.fontFamily": "Menlo for Powerline",
+    "indentRainbow.includedLanguages": [
+        "yaml"
+    ],
+    "files.exclude": {
+        "**/bin": true,
+        "**/obj": true
+    },
+    "breadcrumbs.enabled": false,
+    "vim.leader": "<space>",
+    "vim.normalModeKeyBindingsNonRecursive": [
+        // Navigation
+        // switch b/w buffers
+        { "before": ["<S-h>"], "commands": [":bprevious"] },
+        { "before": ["<S-l>"], "commands": [":bnext"] },
+
+        // Splits
+        { "before": ["leader", "v"], "commands": [":vsplit"] },
+        { "before": ["leader", "s"], "commands": [":split"] },
+
+        // panes
+        { 
+          "before": ["leader", "h"],
+          "commands": ["workbench.action.focusLeftGroup"]
+        },
+        {
+          "before": ["leader", "j"],
+          "commands": ["workbench.action.focusBelowGroup"]
+        },
+        { 
+          "before": ["leader", "k"],
+          "commands": ["workbench.action.focusAboveGroup"]
+        },
+        { 
+          "before": ["leader", "l"],
+          "commands": ["workbench.action.focusRightGroup"]
+        },
+
+        // file tree (vim)
+        { 
+          "before": ["leader", "n", "e"], "commands": ["workbench.explorer.fileView.focus"]
+        },
+
+        // Others (vim)
+        {
+          "before": ["leader", "w"], "commands": ["workbench.action.files.save"]
+        },
+        {
+          "before" :["leader", "f"], "commands": ["workbench.action.quickOpen"]
+        },
+        {
+          "before": ["leader", "p"], "commands": ["editor.action.formatDocument"]
+        },
+        {
+          "before": ["[", "d"],
+          "commands": ["editor.action.marker.prev"]
+        },
+        {
+          "before": ["]", "d"],
+          "commands": ["editor.action.marker.next"]
+        },
+        {
+          "before": ["<leader>", "c", "a"],
+          "commands": ["editor.action.quickFix"]
+        },
+        {
+          "before": ["g", "h"],
+          "commands": ["editor.action.showDefinitionPreviewHover"]
+        }
+    ],
+    "editor.minimap.enabled": false,
+    "editor.lineNumbers": "relative",
+    "[search-result]": {
+      "editor.lineNumbers": "relative"
+    },
+    "vim.smartRelativeLine": true,
+ 
+ 
+   "vim.statusBarColorControl": true,
+  "vim.statusBarColors.normal": ["#8FBCBB", "#000"],
+  "vim.statusBarColors.insert": ["#BF616A", "#000"],
+  "vim.statusBarColors.visual": ["#B48EAD", "#000"],
+  "vim.statusBarColors.visualline": ["#B48EAD", "#000"],
+  "vim.statusBarColors.visualblock": ["#A3BE8C", "#000"],
+  "vim.statusBarColors.replace": "#D08770",
+  "vim.statusBarColors.commandlineinprogress": "#007ACC",
+  "vim.statusBarColors.searchinprogressmode": "#007ACC",
+  "vim.statusBarColors.easymotionmode": "#007ACC",
+  "vim.statusBarColors.easymotioninputmode": "#007ACC",
+  "vim.statusBarColors.surroundinputmode": "#007ACC",
+  "workbench.colorCustomizations": {
+    "statusBar.background": "#B48EAD",
+    "statusBar.noFolderBackground": "#B48EAD",
+    "statusBar.debuggingBackground": "#B48EAD",
+    "statusBar.foreground": "#000",
+    "statusBar.debuggingForeground": "#000"
+  }
+}
